@@ -1,3 +1,9 @@
 /* h1{ color: blue; } */
 /* h1{ color: green; } */
 h1 { color: #F0A050; }
+th, td{ border: dashed thick black; }
+<th class="important">長所</th>
+th,important { color: red; }
+<p class="sample1">セキュリティ対策は今後ますます重要になるでしょう。</P>
+<p class="sample2">セキュリティ対策は今後ますます重要になるでしょう。</P>
+<p class="sample3">セキュリティ対策は今後ますます重要になるでしょう。</P>
