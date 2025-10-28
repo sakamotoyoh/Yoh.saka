@@ -7,6 +7,3 @@ function taro65(){
 function hanako65(){
    who65='花子';
 }
-function saygoodbye61(){
-   alert('Goodbye.');
-}
