@@ -1,5 +1,5 @@
 var who67='world';
-function sayhell67(){
+function sayhello67(){
   alert('Hello,'+who67+'!');
 }
 function someone(x){
