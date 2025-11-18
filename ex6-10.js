@@ -1,2 +1,2 @@
 function gazo610()
-{document.getElementByld('who610')innerHTML='<image src="./image/
+{document.getElementByld('who610')innerHTML='<image src="./image/download.jpg" alt="オン">';}
