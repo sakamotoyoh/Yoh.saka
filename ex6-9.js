@@ -6,5 +6,4 @@ function taro69(){
 }
 function hanako69(){
   document.getElementByld('who69').innerHTML = '花子';
-}
-                      
+}            
