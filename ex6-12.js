@@ -1,3 +1,3 @@
 function imgchange1(){
-  dozument.gitElementById('iogo').src ='./image/button.gif';
-}
+  '<image src="./image/download.jpg" alt="すき焼き" width="200">' 
+  ;}
