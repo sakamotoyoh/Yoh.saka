@@ -1,3 +1,2 @@
-function imgchange1(){
-  '<image src="./image/download.jpg" alt="すき焼き" width="200">'
-  ;}
+function gazo612(){
+  document.getElementById('who&!"img').src = './image/
