@@ -1,7 +1,7 @@
-function gazo612(){
+function imgchange1(){
   document.getElementById('logo').src = './image/download.jpg';
 }
 
-function gazoReset612(){
+function imgReset1(){
   document.getElementById('logo').src = './image/sushi_01.png';
 }
