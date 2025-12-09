@@ -1,5 +1,5 @@
 function imgchange1(){
-  document.getElementById('logo').src = './image/download.jpg'; gap:12px
+  document.getElementById('logo').src = './image/download.jpg';
 }
 
 function imgReset1(){
