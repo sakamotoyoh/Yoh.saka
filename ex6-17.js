@@ -1,4 +1,4 @@
-function hyouji17(){
+function hyoji17(){
 //表示する文字
 var str17 = "一文字ずつ表示します。";
 //テキストボックスの文字数
