@@ -174,21 +174,10 @@
   答:<input type="text" id="answer">
   <input type="button" value="解答" onclick="nazo79();">
 <h1>練習問題7-10</h1> 
-  <div class="form-group">
-  <label for="height_input">身長 (cm):</label>
-  <input type="number" id="height_input" placeholder="例: 170" step="0.1" min="0">
-  </div>   
-    <div class="form-group">
-        <label for="weight_input">体重 (kg):</label>
-        <input type="number" id="weight_input" placeholder="例: 65" step="0.1" min="0">
-    </div>
-    
-    <button onclick="calculateBMI()">計算して表示</button>
-    
-    <div id="result_area">
-        <p>あなたのBMIは: <span id="result_bmi"></span></p>
-        <p>判定: <span id="result_status"></span></p>
-    </div>
-
+身長(cm): <input type="text" id="height_input"></p>
+<p>体重(kg): <input type="text" id="weight_input"></p>
+<button onclick="calculateBMI()">計算して表示</button>
+<p>あなたのBMIは: <span id="result_bmi"></span></p>
+<p>判定: <span id="result_status"></span></p>
 </body>
 </html>
