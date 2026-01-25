@@ -1,11 +1,11 @@
 <script>
-    // 画像のHTMLから呼び出される calculateBMI 関数を定義
+    // HTML要素から呼び出される calculateBMI 関数を定義
     function calculateBMI() {
-        // HTML要素から入力値を取得
-        const heightCm = document.getElementById("height_input").value;
-        const weightKg = document.getElementById("weight_input").value;
+        // IDを使ってHTML要素（入力フィールド）の値を取得
+        const heightCm = document.getElementById('height_input').value;
+        const weightKg = document.getElementById('weight_input').value;
 
-        // バリデーション（数値であること、正の値であることを確認）
+        // 入力値のバリデーション（数値であること、正の値であることを確認）
         if (isNaN(heightCm) || isNaN(weightKg) || heightCm <= 0 || weightKg <= 0) {
             document.getElementById('result_status').textContent = "有効な値を入力してください。";
             document.getElementById('result_bmi').textContent = "";
@@ -19,7 +19,7 @@
         // BMIを計算
         const bmi = weight / (heightM * heightM);
 
-        // 判定ロジック
+        // 判定ロジック（場合分け）
         let status = "";
         if (bmi < 18.5) {
             status = "低体重";
@@ -29,8 +29,8 @@
             status = "肥満";
         }
 
-        // 結果をHTML要素に表示
-        document.getElementById('result_bmi').textContent = bmi.toFixed(2); // 小数点第2位まで
+        // 結果をHTML要素（spanタグ）に表示
+        document.getElementById('result_bmi').textContent = bmi.toFixed(2); // 小数点第2位まで表示
         document.getElementById('result_status').textContent = status;
     }
 </script>
