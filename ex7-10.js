@@ -2,8 +2,8 @@
     // 画像のHTMLから呼び出される calculateBMI 関数を定義
     function calculateBMI() {
         // HTML要素から入力値を取得
-        const heightCm = document.getElementById('height_input').value;
-        const weightKg = document.getElementById('weight_input').value;
+        const heightCm = document.getElementById("height_input").value;
+        const weightKg = document.getElementById("weight_input").value;
 
         // バリデーション（数値であること、正の値であることを確認）
         if (isNaN(heightCm) || isNaN(weightKg) || heightCm <= 0 || weightKg <= 0) {
