@@ -1,15 +1,10 @@
-function nazo(){
-  if(document.getElementById('answer').value == '夢'){
+function nazo79() {
+  const answerValue = document.getElementById('answer').value; // 値を変数に入れて再利用
+
+  if (answerValue === '') { // 比較演算子 === を使うのがより良いプラクティスです
     alert('あたり!');
+  } else if (answerValue === 'ゆめ') {
+    alert('あたり!');
+  } else {
+    alert('ハズレ'); // 上記いずれにも当てはまらない場合のハズレ
   }
-  else{
-    alert('ハズレ')
-  }
-}
- if(document.getElementById('answer').value =='ゆめ'){
-   alert('あたり');
- }
- else{
-   alert('ハズレ')
-  }
-}
