@@ -16,6 +16,7 @@
 <script src="ex06-15.js"></script>
 <script src="ex6-16.js"></script>
 <script src="ex6-17.js"></script>
+<script src="ex6-18.js"></script>
 <script src="ex7-1.js"></script>
 <script src="ex7-2.js"></script>
 <script src="ex7-3.js"></script>
@@ -124,6 +125,25 @@
  <br>
  <input type="text" name="moji17" size="30" value="">
 </form>
+<h1>練習問題</h1>
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>画像切り替え練習問題</title>
+</head>
+<body>
+
+    <h1>画像を切り替えて3秒で戻すボタン</h1>
+    <!-- 初期画像を表示するimgタグ。id="myImage"でJavaScriptから操作できるようにしています。 -->
+    <!-- src="original.jpg"の部分を最初の画像ファイル名に変更してください。 -->
+    <img src="original.jpg" id="myImage" alt="元の画像" width="300">
+    <br>
+    <!-- ボタンをクリックしたときにJavaScriptのchangeImageOnce()関数を呼び出します。 -->
+    <button onclick="changeImageOnce()">画像を変更</button>
+
+    <!-- ここにJavaScriptコードを記述します -->
+    <script src="script.js"></script>
 <h1>練習問題7-1 テキスト入力の練習</h1>
  <input type="button" value="あいさつ"
   onclick="sayhello71();">
