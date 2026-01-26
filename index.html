@@ -127,20 +127,37 @@
  <input type="text" name="moji17" size="30" value="">
 </form>
 <h1>練習問題6-18</h1>
-<h1>画像を切り替えて3秒で戻すボタン</h1>
- <!-- 初期画像を表示するimgタグ。id="myImage"でJavaScriptから操作できるようにしています。 -->
- <!-- src="original.jpg"の部分を最初の画像ファイル名に変更してください。 -->
- <img src = image src="./image/download.jpg" id="myImage" alt="元の画像" width="300">
- <br>
- <!-- ボタンをクリックしたときにJavaScriptのchangeImageOnce()関数を呼び出します。 -->
- <button onclick="changeImageOnce()">画像を変更</button>
- <!-- ここにJavaScriptコードを記述します -->
- <script src="script.js">
- </script>
-<h1>練習問題7-1 テキスト入力の練習</h1>
- <input type="button" value="あいさつ"
-  onclick="sayhello71();">
- <p>誰？<input type="text" id="who71"></p>
+<!-- 1. 画像要素: 初期画像 original.jpg を表示 -->
+    <!-- 代替として、ここではダミーの画像URLを使用します -->
+    <!-- 実際の環境では、original.jpg という名前の画像ファイルを用意してください -->
+    <img src="https://picsum.photos" id="myImage" alt="Original Image">
+    
+    <!-- 2. ボタン要素: クリック時に JavaScript 関数 changeImage() を実行 -->
+    <button onclick="changeImage()">画像を変更</button>
+
+    <script>
+        // JavaScript コード
+        function changeImage() {
+            const imageElement = document.getElementById('myImage');
+            
+            // 元の画像のURLを保持
+            // ここではダミーURLを例として使用
+            const originalSrc = 'https://picsum.photos'; 
+            
+            // 新しい画像のURL
+            // 実際の環境では、new.jpg などの新しい画像ファイルを用意してください
+            const newSrc = 'https://picsum.photos'; 
+
+            // 画像を新しいものに切り替える
+            imageElement.src = newSrc;
+
+            // 3000ミリ秒（3秒）後に実行されるタイマーを設定
+            setTimeout(function() {
+                // タイマー発動時に元の画像に戻す
+                imageElement.src = originalSrc;
+            }, 3000); // 3000ms = 3s
+        }
+    </script>
 <h1>練習問題7-2　足し算</h1>
  <p>
   <input type="text" id="input1">+<input type="text"id="input2">
