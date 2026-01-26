@@ -1,36 +1,27 @@
-<script>
-    // HTML要素から呼び出される calculateBMI 関数を定義
-    function calculateBMI() {
-        // IDを使ってHTML要素（入力フィールド）の値を取得
-        const heightCm = document.getElementById('height_input').value;
-        const weightKg = document.getElementById('weight_input').value;
+function calcBMI() {
+  let height = document.getElementById("height").value;
+  let weight = document.getElementById("weight").value;
 
-        // 入力値のバリデーション（数値であること、正の値であることを確認）
-        if (isNaN(heightCm) || isNaN(weightKg) || heightCm <= 0 || weightKg <= 0) {
-            document.getElementById('result_status').textContent = "有効な値を入力してください。";
-            document.getElementById('result_bmi').textContent = "";
-            return;
-        }
+  // cm → m
+  height = height / 100;
 
-        // 身長をメートルに変換 (cm -> m)
-        const heightM = parseFloat(heightCm) / 100; 
-        const weight = parseFloat(weightKg);
+  // BMI計算
+  let bmi = weight / (height * height);
 
-        // BMIを計算
-        const bmi = weight / (heightM * heightM);
+  let message = "";
 
-        // 判定ロジック（場合分け）
-        let status = "";
-        if (bmi < 18.5) {
-            status = "低体重";
-        } else if (bmi < 25) {
-            status = "普通";
-        } else {
-            status = "肥満";
-        }
-
-        // 結果をHTML要素（spanタグ）に表示
-        document.getElementById('result_bmi').textContent = bmi.toFixed(2); // 小数点第2位まで表示
-        document.getElementById('result_status').textContent = status;
+  // 判定（問題文どおりのif構造）
+  if (bmi < 18.5) {
+    message = "低体重";
+  } else {
+    if (bmi < 25) {
+      message = "普通";
+    } else {
+      message = "肥満";
     }
-</script>
+  }
+
+  document.getElementById("result").textContent =
+    "BMIは " + bmi.toFixed(2) + " です（判定：" + message + "）";
+}
+</html>
