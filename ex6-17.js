@@ -12,4 +12,4 @@
 //全て表示させたら、空文字に戻す
 document.timer17.moji17.value = "";}
 //setTimeout()を含む関数を呼び出す
-setTimeout(hyoji17()",1000);}
+setTimeout("hyoji17()",1000);}
