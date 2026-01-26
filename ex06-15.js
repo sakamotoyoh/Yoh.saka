@@ -1,15 +1,23 @@
-function hyoji(){
 //表示する文字
 var str = "一文字ずつ表示します。";
-//テキストボックスの文字数
+var timerID = null;
+
+function hyoji(){
+  //現在の文字数
 var cnt = document.timer.moji.value.length;
-//文字が全部表示されているかの確認
-if ( cnt<11 ){
-//現在より１文字多く切り出して表示
-document.timer.moji.value = str.substr(0,cnt + 1);}
-else {
-//全て表示されたら、から文字に戻す
-document.timer.moji.value = "";}}
-function starfnc(){
-//関数hyouji()を1000ミリ秒間隔で呼び戻す
-setlnterval("hyoji()",1000);}
+
+//まだ全部表示されていない場合
+if (cnt < str.length) {
+ document.timer.moji.value = str.substr(0,cnt + 1);
+}else {
+//全て表示されたらリセット
+  document.timer.moji.value = "";
+ }
+}
+
+function starfnc() {
+//多重起動防止
+ if (timerID === null){
+   timerID  = setInterval(hyoji,1000);
+ }
+}
