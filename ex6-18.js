@@ -1,6 +1,6 @@
 // 元の画像と変更後の画像のファイル名を定義します。必要に応じて変更してください。
 const ORIGINAL_IMAGE_SRC = 'image src="./image/download.jpg'
-const CHANGED_IMAGE_SRC = 'changed.jpg';
+const CHANGED_IMAGE_SRC = ' image src="./image/download.jpg"'';
 const TIMEOUT_DURATION = 3000; // 3秒 (ミリ秒単位)
 
 /**
