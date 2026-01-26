@@ -188,10 +188,16 @@
   答:<input type="text" id="answer">
   <input type="button" value="解答" onclick="nazo79();">
 <h1>練習問題7-10</h1> 
-身長(cm): <input type="text" id="height_input"></p>
-<p>体重(kg): <input type="text" id="weight_input"></p>
-<button onclick="calculateBMI()">計算して表示</button>
-<p>あなたのBMIは: <span id="result_bmi"></span></p>
-<p>判定: <span id="result_status"></span></p>
+  <p>
+    身長(cm):
+    <input type="number" id="height">
+  </p>
+  <p>
+    体重(kg):
+    <input type="number" id="weight">
+  </p>
+  <button onclick="calcBMI()">計算</button>
+  <p id="result"></p>
+  <script src="bmi.js"></script>
 </body>
 </html>
