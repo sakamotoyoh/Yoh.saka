@@ -3,6 +3,6 @@ function nazo(){
     alert('あたり!');
   }
   else{
-    alert('ハズレ')
+    alert('ハズレ');
   }
 }
