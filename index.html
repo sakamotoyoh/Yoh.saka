@@ -112,18 +112,14 @@
  </div>
 <h1>練習問題6-14</h1>
   <p>マネジメント総合学科 1年の坂本耀です。</p>
+<!-- 自己紹介のdiv要素の中にimg要素を配置 -->
+<div id="intro-photo">
+  <img src="my_face_closed.jpg" alt="最初の写真" id="myPhoto">
+</div>
 
-  <!-- img要素をdivで囲む -->
-  <div id="photoArea">
-    <img id="myPhoto" src="images/WIN_20260128_21_29_27_Pro.jpg" alt="自分の写真" width="300">
-  </div>
-
-  <!-- ボタン -->
-  <button onclick="changePhoto()">写真を切り替える</button>
-  <button onclick="resetPhoto()">元の写真に戻す</button>
-
-  <!-- JavaScript読み込み -->
-  <script src="6-14.js"></script>
+<!-- ボタンを配置し、onclick属性でJavaScript関数を呼び出す -->
+<button onclick="changeToPhoto2()">写真を切り替える</button>
+<button onclick="changeToPhoto1()">元の写真に戻す</button>
 <h1>練習問題6-15</h1>
 <form name="timer">
 <input type="button" value="スタート" onclick="startfnc()">
