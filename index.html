@@ -112,15 +112,44 @@
  </div>
 <h1>練習問題6-14</h1>
   <p>マネジメント総合学科 1年の坂本耀です。</p>
-<!-- 自己紹介のdiv要素の中にimg要素を配置 -->
+ <!-- 自己紹介のdiv要素の中にimg要素を配置 (ing -> img に修正) -->
 <div id="intro-photo1">
-  <img src="image/WIN_20260128_21_45_56_Pro.jpg" alt="最初の写真" id="myPhoto1"  width="300">
+    <!-- IDを 'myPhoto1' に統一 (l -> 1 に修正) -->
+    <img src="image/MIN_20260128_21_45_56_Pro.jpg" alt="最初の写真" id="myPhoto1" width="300">
 </div>
 
 <!-- ボタンを配置し、onclick属性でJavaScript関数を呼び出す -->
 <button onclick="changeToPhoto2()">写真を切り替える</button>
 <button onclick="changeToPhoto1()">元の写真に戻す</button>
- <hr>
+
+<script>
+    // myPhoto1 IDを持つ画像要素を取得
+    const myImage = document.getElementById('myPhoto1');
+
+    // 1枚目と2枚目の写真のファイルパスを定義
+    const photo1Src = "image/MIN_20260128_21_45_56_Pro.jpg";
+    // 2枚目の写真のパスは仮の値です。適切なファイル名に変更してください。
+    const photo2Src = "image/別の写真のファイル名.jpg";
+
+    // 写真を2枚目のものに切り替える関数
+    function changeToPhoto2() {
+        if (myImage) { // 要素が取得できたか確認
+            myImage.src = photo2Src;
+        }
+    }
+
+    // 写真を元のもの (1枚目)に戻す関数
+    function changeToPhoto1() {
+        if (myImage) { // 要素が取得できたか確認
+            myImage.src = photo1Src;
+        }
+    }
+</script>
+
+
+<!-- ボタンを配置し、onclick属性でJavaScript関数を呼び出す -->
+<button onclick="changeToPhoto2()">写真を切り替える</button>
+<button onclick="changeToPhoto1()">元の写真に戻す</button>
 <h1>練習問題6-15</h1>
 <form name="timer">
 <input type="button" value="スタート" onclick="startfnc()">
