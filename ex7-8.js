@@ -1,8 +1,8 @@
 function nazo78(){
   if(document.getElementById('answer').value == '夢'){
-    alert('あたり!');
+    alert('はずれ!');
   }
   else{
-    alert('ハズレ');
+    alert('あたり');
   }
 }
