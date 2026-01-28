@@ -1,10 +1,44 @@
-/* h1{ color: blue; } */
-/* h1{ color: green; } */
-h1 { color: #F0A050; }
-th, td { border: dashed thick black; }
-th.important { color: red; }
-p.sample1 { border: double 10px #000;}
-p.sample2 { border: inset 10px #ff0000;}
-p.sample3 {margin: 30px 30px;padding: 10px;border:medium solid #ff00ff;}
-/*imagechange.css */
-img.imagechange{width: 500px; height: 200px;}
+/* 1. 見出しの視認性向上 */
+h1 { 
+    color: #E67E22; /* 以前より少し濃いオレンジ（可読性アップ） */
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+/* 2. テーブル：ブラウザ間の差異をなくし、隙間を調整 */
+table {
+    border-collapse: collapse; /* 隣接する境界線を重ねる [MDN](https://developer.mozilla.org) */
+}
+
+th, td { 
+    border: 3px dashed black; /* thickではなく数値(px)で指定 */
+    padding: 8px;            /* セル内に適度な余白を追加 */
+}
+
+th.important { 
+    color: #D63031; /* 少し落ち着いた赤 */
+    font-weight: bold;
+}
+
+/* 3. 段落：ボックスモデルの明文化 */
+p[class^="sample"] {
+    margin: 1.5rem 0; /* 上下の間隔を整理 */
+}
+
+p.sample1 { border: 10px double #000; }
+p.sample2 { border: 10px inset #ff0000; }
+
+p.sample3 {
+    margin: 30px; 
+    padding: 10px;
+    border: 2px solid #ff00ff; /* mediumではなく数値で指定 */
+}
+
+/* 4. 画像：歪みを防ぎ、スマホ対応も考慮 */
+img.imagechange {
+    width: 100%;       /* 親要素の幅に合わせる */
+    max-width: 500px;  /* 最大幅を制限 */
+    height: 200px; 
+    object-fit: cover; /* 画像を歪ませずに切り抜いて表示 [MDN](https://developer.mozilla.org) */
+    display: block;    /* 下部の不要な隙間を消す */
+}
