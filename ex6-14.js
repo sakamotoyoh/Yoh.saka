@@ -1,9 +1,17 @@
-// 写真を2枚目に切り替える関数
-function changePhoto() {
-  document.getElementById("myPhoto").src = "image/WIN_20260128_21_29_27_Pro.jpg";
+// 画像の要素をIDで取得します
+const myImage = document.getElementById('myPhoto');
+
+// 最初の写真のファイル名を定義します
+const photo1Src = 'my_face_closed.jpg'; // 自分の最初の写真のファイル名に変更してください
+// 2枚目の写真のファイル名を定義します
+const photo2Src = 'my_face_open.jpg'; // 自分の2枚目の写真のファイル名に変更してください
+
+// 写真を2枚目のものに切り替える関数
+function changeToPhoto2() {
+  myImage.src = photo2Src;
 }
 
-// 元の写真に戻す関数
-function resetPhoto() {
-  document.getElementById("myPhoto").src = "image/WIN_20260128_21_29_25_Pro.jpg";
+// 写真を元のもの（1枚目）に戻す関数
+function changeToPhoto1() {
+  myImage.src = photo1Src;
 }
