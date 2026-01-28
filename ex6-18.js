@@ -1,11 +1,11 @@
-function changePhoto() {
+function changePhoto618() {
   document.getElementById("myPhoto").src =
     "image/WIN_20260128_21_29_25_Pro.jpg";
 
-  setTimeout(returnPhoto, 3000);
+  setTimeout(returnPhoto618, 3000);
 }
 
-function returnPhoto() {
+function returnPhoto618() {
   document.getElementById("myPhoto").src =
     "image/WIN_20260128_21_29_27_Pro.jpg";
 }
