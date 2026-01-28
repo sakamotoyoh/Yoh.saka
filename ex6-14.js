@@ -1,5 +1,5 @@
 // 画像の要素をIDで取得します
-const myImage = document.getElementById('myPhoto');
+const myImage = document.getElementById('myPhoto1');
 
 // 最初の写真のファイル名を定義します
 const photo1Src = 'image/WIN_20260128_21_45_56_Pro.jpg'; // 自分の最初の写真のファイル名に変更してください
