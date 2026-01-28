@@ -140,37 +140,14 @@
  <input type="text" name="moji17" size="30" value="">
 </form>
 <h1>練習問題6-18</h1>
-<!-- 1. 画像要素: 初期画像 original.jpg を表示 -->
-    <!-- 代替として、ここではダミーの画像URLを使用します -->
-    <!-- 実際の環境では、original.jpg という名前の画像ファイルを用意してください -->
-    <img src="https://picsum.photos" id="myImage" alt="Original Image">
-    
-    <!-- 2. ボタン要素: クリック時に JavaScript 関数 changeImage() を実行 -->
-    <button onclick="changeImage()">画像を変更</button>
-
-    <script>
-        // JavaScript コード
-        function changeImage() {
-            const imageElement = document.getElementById('myImage');
-            
-            // 元の画像のURLを保持
-            // ここではダミーURLを例として使用
-            const originalSrc = 'img src="./image/sushi_01.png"'; 
-            
-            // 新しい画像のURL
-            // 実際の環境では、new.jpg などの新しい画像ファイルを用意してください
-            const newSrc = 'image src="./image/download.jpg"';
-
-            // 画像を新しいものに切り替える
-            imageElement.src = newSrc;
-
-            // 3000ミリ秒（3秒）後に実行されるタイマーを設定
-            setTimeout(function() {
-                // タイマー発動時に元の画像に戻す
-                imageElement.src = originalSrc;
-            }, 3000); // 3000ms = 3s
-        }
-    </script>
+  <!-- 画像をdivで囲む -->
+  <div id="photoArea">
+    <img id="myPhoto" src="images/photo1.jpg" width="300">
+  </div>
+  <!-- ボタン -->
+  <button onclick="changePhoto()">画像を切り替える</button>
+  <!-- JavaScript -->
+  <script src="6-18.js"></script>
 <h1>練習問題7-1</h1>
  <input type="button" value="あいさつ" onclick="sayhello71();">
  <p>誰？ <input type="text" id="who71">
