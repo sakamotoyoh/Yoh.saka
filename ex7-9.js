@@ -1,5 +1,5 @@
 function nazo79() {
-  const answerValue = document.getElementById('answer').value; // 値を変数に入れて再利用
+  const answerValue = document.getElementById('answer79').value; // 値を変数に入れて再利用
 
   if (answerValue === '夢') { // 比較演算子 === を使うのがより良いプラクティスです
     alert('あたり!');
