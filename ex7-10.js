@@ -1,12 +1,12 @@
     function calcBMI() {
-      let height = document.getElementById("height").value;
-      let weight = document.getElementById("weight").value;
+      let height = document.getElementById("height2").value;
+      let weight = document.getElementById("weight2").value;
 
       // 数値に変換（重要！）
       height = Number2(height2) / 100;
       weight = Number2(weight2);
 
-      let bmi = weight / (height * height);
+      let bmi = weight2 / (height2 * height2);
 
       let message = "";
 
