@@ -1,10 +1,10 @@
     function calcBMI() {
-      let height = document.getElementById("height").value;
-      let weight = document.getElementById("weight").value;
+      let height = document.getElementById("height2").value;
+      let weight = document.getElementById("weight2").value;
 
       // 数値に変換（重要！）
-      height = Number(height) / 100;
-      weight = Number(weight);
+      height = Number2(height2) / 100;
+      weight = Number2(weight2);
 
       let bmi = weight / (height * height);
 
@@ -20,6 +20,6 @@
         }
       }
 
-      document.getElementById("result").textContent =
+      document.getElementById("result2").textContent =
         "BMIは " + bmi.toFixed(2) + " です（判定：" + message + "）";
     }
