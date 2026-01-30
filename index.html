@@ -201,17 +201,25 @@
   答:<input type="text" id="answer79">
   <input type="button" value="解答" onclick="nazo79();">
 <h1>練習問題7-10</h1> 
-  <p>
-    身長(cm):
-    <input type="number" id="height2">
-  </p>
-  <p>
-    体重(kg):
-    <input type="number" id="weight2">
-  </p>
-  <button onclick="calcBMI()">計算</button>
+  <label>
+    身長（cm）：
+    <input type="number" id="height2" placeholder="例：170">
+  </label>
+  <br><br>
+
+  <label>
+    体重（kg）：
+    <input type="number" id="weight2" placeholder="例：60">
+  </label>
+  <br><br>
+
+  <button onclick="calcBMI()">BMIを計算</button>
+
   <p id="result2"></p>
- <script src="ex7-10.js"></script>
+
+  <script src="script.js"></script>
+  <!-- ↑ calcBMI() を書いたJSファイル -->
+
  <h1>練習問題7-11</h1>
  <p>西暦年を入力してください:</p>
  <input type="number" id="yearInput" placeholder="例: 2024">
