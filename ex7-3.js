@@ -7,7 +7,7 @@ function calcBMI() {
   height1 = height1 / 100;
 
   // BMI計算
-  let bmi = weight1 / (height1 * height1);
+  let bmi = weight / (height * height);
 
   // 結果を表示（小数第2位まで）
   document.getElementById("result1").textContent =
