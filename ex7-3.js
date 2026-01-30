@@ -3,13 +3,13 @@ function calcBMI() {
   let height = document.getElementById("height1").value;
   let weight = document.getElementById("weight1").value;
 
-  // cm → m に変換
-  height = height / 100;
+  // mに変換するため数値型に変換
+  // Number() 関数を使用して文字列を数値に変換しています
+  height = Number(height) / 100;
 
-  // BMI計算
+  // 計算
   let bmi = weight / (height * height);
 
-  // 結果を表示（小数第2位まで）
-  document.getElementById("result1").textContent =
-    "あなたのBMIは " + bmi.toFixed(2) + " です";
+  // 結果を表示(小数第2位まで)
+  document.getElementById("result1").textContent = "あなたのBMIは" + bmi.toFixed(2) + "です";
 }
