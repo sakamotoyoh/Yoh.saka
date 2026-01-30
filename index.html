@@ -216,7 +216,9 @@
  <p>西暦年を入力してください:</p>
  <input type="number" id="yearInput" placeholder="例: 2024">
  <button onclick="checkLeapYear()">判定</button>
- <p id="resultArea"></p> <script> function checkLeapYear() { 
+ <p id="resultArea"></p> 
+ <script> 
+  function checkLeapYear() { 
  // 入力された値を取得 
  const year = document.getElementById("yearInput").value; 
  const resultArea = document.getElementById("resultArea"); 
@@ -226,5 +228,6 @@
   // (4で割り切れる かつ 100で割り切れない) または (400で割り切れる) 
   if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) { resultArea.textContent = year + "年は**閏年**です。"; } 
   else { resultArea.textContent = year + "年は**平年**です。"; } }
+ </script>
 </body>
 </html>
