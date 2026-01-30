@@ -111,14 +111,20 @@
   <input type="button" value="元に戻す" onclick="imgReset1();">
  </div>
 <h1>練習問題6-14</h1>
- <!-- 画像をdivで囲む -->
-  <div>
-    <img src="image/WIN_20260128_21_45_56_Pro.jpg"  alt="最初の写真" id="myPhoto1" width="300">
-  </div>
-  <!-- ボタン -->
-  <button onclick="changePhoto614()">画像を切り替える</button>
-  <button onclick="returnPhoto614()">画像を戻す</button>
-  <!-- JavaScript -->
+    <!-- 写真表示エリア -->
+    <div id="intro-photo-area">
+        <!-- JavaScriptコードがこのIDを参照します -->
+        <!-- 初期画像として '54.jpg' を表示 -->
+        <img src="Image/MIN_20260128_21_45_54_Pro.jpg" alt="最初の写真" id="myPhoto1" width="300">
+    </div>
+
+    <!-- 操作ボタン -->
+    <!-- onclick属性でJavaScriptの関数を呼び出します -->
+    <button onclick="changePhoto614()">写真を切り替える</button>
+    <button onclick="returnPhoto614()">元の写真に戻す</button>
+
+    <!-- 外部JavaScriptファイル (ex6-14.js) を読み込みます -->
+    <script src="ex6-14.js"></script>
 <h1>練習問題6-15</h1>
 <form name="timer">
 <input type="button" value="スタート" onclick="startfnc()">
