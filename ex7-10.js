@@ -3,8 +3,8 @@
       let weight = document.getElementById("weight2").value;
 
       // 数値に変換（重要！）
-      height = Number2(height2) / 100;
-      weight = Number2(weight2);
+      let height = Number(heightStr) / 100;
+      let weight = Number(weightStr);
 
       let bmi = weight / (height * height);
 
