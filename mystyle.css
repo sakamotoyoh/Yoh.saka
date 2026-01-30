@@ -5,7 +5,7 @@ th.important{ color: red; }
 p.sample1 {border: double 10px #0000ff;}
 p.sample2 {border: inset 10px #ff0000;} 
 p.sample3 {margin: 30px 30px;padding: 10px;border:medium solid #ff00ff;}
-img.imagchange{
-  width: 500px;
-  height: 200px;
+.sushi {
+  width: 500px;   /* ← ここで小ささを調整 */
+  height: 200px;   /* 縦横比を維持 */
 }
