@@ -13,4 +13,3 @@ function returnPhoto614() {
     // '54.jpg' の画像パス (フォルダ名 'image' は小文字)
     myImage.src = "image/WIN_20260128_21_45_54_Pro.jpg";
   }
-}
