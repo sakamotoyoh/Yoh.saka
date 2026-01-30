@@ -154,17 +154,27 @@
   <input type="button" value="計算" onclick="add();">
  </p>
 <h1>練習問題7-3</h1>
-  <p>
-    身長(cm):
-    <input type="number" id="height1">
-  </p>
-  <p>
-    体重(kg):
-    <input type="number" id="weight1">
-  </p>
-  <button onclick="calcBMI()">計算</button>
-  <p id="result1"></p>
-  <script src="bmi.js"></script>
+    <p>身長（cm）: <input type="number" id="height"></p>
+    <p>体重（kg）: <input type="number" id="weight1"></p>
+    <button onclick="calcBMI()">計算する</button>
+    <p id="result1">あなたのBMIは...です</p>
+    <script>
+        function calcBMI() {
+            // 1. 入力された身長と体重の値を取得する
+            const heightstr = document.getElementById('height').value;
+            const weightstr = document.getElementById('weight1').value;
+
+            // 2. 身長をcmからmに変換する(数値型に変換)
+            // Number() 関数を使用して文字列を数値に変換しています
+            const height = Number(heightstr) / 100;
+
+            // 3. BMIを計算する(体重+身長の2乗)
+            const bmi = Number(weightstr) / (height * height);
+
+            // 4. 結果を表示する
+            document.getElementById('result1').innerText = 'あなたのBMIは' + bmi.toFixed(1) + 'です';
+        }
+    </script>
 <h1>練習問題7-4　なぞなぞ</h1>
  <p>目を閉じていないと見れないものはなーに？</p>
  <p>
