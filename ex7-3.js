@@ -4,7 +4,7 @@ function calcBMI() {
   let weight = document.getElementById("weight1").value;
 
   // cm → m に変換
-  height1 = height1 / 100;
+  height = height / 100;
 
   // BMI計算
   let bmi = weight / (height * height);
