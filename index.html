@@ -212,11 +212,18 @@
   <p id="result2"></p>
  <script src="ex7-10.js"></script>
  <h1>練習問題7-11</h1>
- <p>西暦年を入力してください：</p>
-<input type="number" id="yearInput" placeholder="例：2024">
-
-<button onclick="checkLeapYear()">判定</button>
-
-<p id="resultArea"></p>
+ <p>西暦年を入力してください:</p>
+ <input type="number" id="yearInput" placeholder="例: 2024">
+ <button onclick="checkLeapYear()">判定</button>
+ <p id="resultArea"></p> <script> function checkLeapYear() { 
+ // 入力された値を取得 
+ const year = document.getElementById("yearInput").value; 
+ const resultArea = document.getElementById("resultArea"); 
+ if (year === "" || isNaN(year)) 
+ { resultArea.textContent = "有効な西暦年を入力してください。"; return; }
+  // 閏年判定の論理式 
+  // (4で割り切れる かつ 100で割り切れない) または (400で割り切れる) 
+  if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) { resultArea.textContent = year + "年は**閏年**です。"; } 
+  else { resultArea.textContent = year + "年は**平年**です。"; } }
 </body>
 </html>
