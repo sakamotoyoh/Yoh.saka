@@ -11,5 +11,5 @@ function calcBMI() {
   const bmi = Number(weightStr) / (heightM * heightM);
 
   // 4. 結果を表示する
-  document.getElementById('result1').innerText = 'BMIは' + bmi.toFixed(2) + 'です';
+  document.getElementById('result1').innerText = 'あなたのBMIは' + bmi.toFixed(2) + 'です';
 }
