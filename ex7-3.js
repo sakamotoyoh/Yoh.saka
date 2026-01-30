@@ -5,10 +5,10 @@ function calcBMI() {
 
   // 2. 身長をcmからmに変換する（数値型に変換）
   // Number() 関数を使用して文字列を数値に変換しています
-  const heightM = Number(heightStr) / 100;
+  const height = Number(heightStr) / 100;
 
   // 3. BMIを計算する(体重÷身長の2乗)
-  const bmi = Number(weightStr) / (heightM * heightM);
+  const bmi = Number(weightStr) / (height * height);
 
   // 4. 結果を表示する
   document.getElementById('result1').innerText = 'あなたのBMIは' + bmi.toFixed(1) + 'です';
