@@ -6,11 +6,10 @@
       height = Number2(height2) / 100;
       weight = Number2(weight2);
 
-      let bmi = weight2 / (height2 * height2);
+      let bmi = weight / (height * height);
 
-      let message = "";
-
-      if (bmi < 18.5) {
+      let message;
+        if (bmi < 18.5) {
         message = "低体重";
       } else {
         if (bmi < 25) {
