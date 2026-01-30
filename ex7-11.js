@@ -1,4 +1,3 @@
-<script>
 function checkLeapYear() {
     // 入力された値を取得
     const year = Number(document.getElementById("yearInput").value);
@@ -21,4 +20,3 @@ function checkLeapYear() {
     // 結果表示
     resultArea.textContent = message;
 }
-</script>
