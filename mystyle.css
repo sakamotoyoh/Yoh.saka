@@ -1,50 +1,8 @@
-/* 1. 見出しの視認性向上 */
-h1 {
-  color: #E67E22;          /* 少し濃いオレンジ（可読性アップ） */
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-}
-
-/* 2. テーブル：ブラウザ間の差異をなくし、境界を調整 */
-table {
-  border-collapse: collapse; /* 隣接する境界線を重ねる */
-}
-
-th,
-td {
-  border: 3px dashed black;  /* 数値(px)で指定 */
-  padding: 8px;              /* セル内の余白 */
-}
-
-/* 重要な見出しセル */
-th.important {
-  color: #D63031;            /* 落ち着いた赤 */
-  font-weight: bold;
-}
-
-/* 3. 段落：ボックスモデルの明確化 */
-p.sample {
-  margin: 1.5rem 0;          /* 上下の間隔を調整 */
-}
-
-p.sample1 {
-  border: 10px double #000;
-}
-
-p.sample2 {
-  border: 10px inset #FF0000;
-}
-
-p.sample3 {
-  margin: 30px;
-  padding: 10px;
-  border: 2px solid #FF00FF;
-}
-
-/* 4. 画像：歪みを防ぎ、スマホ対応も考慮 */
-img.imagechange {
-  width: 100%;               /* 親要素に合わせる */
-  max-width: 500px;          /* 最大幅を制限 */
-  height: auto;              /* 縦横比を保持 */
-  display: block;            /* 下の不要な隙間を防止 */
-}
+th, td { border: dashed thick black; }
+/* h1 {color: green; } */
+h1 { color: #F0A050; }
+th,td{ border: dashed thick black; }
+th.important{ color: red; }
+p.sample1 {border: double 10px #0000ff;}
+p.sample2 {border: inset 10px #ff0000;}
+p.sample3 {margin: 30px 30px;padding: 10px;border:medium solid #ff00ff;}
