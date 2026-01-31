@@ -3,7 +3,7 @@ function changePhoto614() {
   const myImage = document.getElementById("myPhoto1");
   if (!myImage) return;
     // '56.jpg' の画像パス (フォルダ名 'Image' は大文字)
-    myImage.src = "image/WIN_20260128_21_45_56_Pro.jpg";
+    myImage.src = "image/S__48775171.jpg";
   }
 
 function returnPhoto614() {
@@ -11,5 +11,5 @@ function returnPhoto614() {
   const myImage = document.getElementById("myPhoto1");
   if (!myImage) return;
     // '54.jpg' の画像パス (フォルダ名 'image' は小文字)
-    myImage.src = "image/WIN_20260128_21_45_54_Pro.jpg";
+    myImage.src = "image/S__48775172.jpg";
   }
